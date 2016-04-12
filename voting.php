@@ -1,10 +1,31 @@
 <?php
-// the message
-$msg = "First line of text\nSecond line of text";
+// Pear Mail Library
+require_once "Mail.php";
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
+$from = '<matthewbarteau@gmail.com>';
+$to = '<matthewbarteau@gmail.com>';
+$subject = 'Hi!';
+$body = "Hi,\n\nHow are you?";
 
-// send email
-mail("matthewbarteau@gmail.com","My subject",$msg);
+$headers = array(
+    'From' => $from,
+    'To' => $to,
+    'Subject' => $subject
+);
+
+$smtp = Mail::factory('smtp', array(
+        'host' => 'ssl://smtp.gmail.com',
+        'port' => '465',
+        'auth' => true,
+        'username' => 'matthewbarteau@gmail.com',
+        'password' => 'idontknow5'
+    ));
+
+$mail = $smtp->send($to, $headers, $body);
+
+if (PEAR::isError($mail)) {
+    echo('<p>' . $mail->getMessage() . '</p>');
+} else {
+    echo('<p>Message successfully sent!</p>');
+}
 ?>
