@@ -1,97 +1,59 @@
-<form name="contactform" method="post" action="voting.php">
- 
-<table width="450px">
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="first_name">First Name *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="first_name" maxlength="50" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top"">
- 
-  <label for="last_name">Last Name *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="last_name" maxlength="50" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="email">Email Address *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="email" maxlength="80" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="telephone">Telephone Number</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="text" name="telephone" maxlength="30" size="30">
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="comments">Comments *</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- 
- </td>
- 
-</tr>
- 
-<tr>
- 
- <td colspan="2" style="text-align:center">
- 
-  <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
- 
- </td>
- 
-</tr>
- 
-</table>
- 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+<head>
+	<title>Contact us</title>
+<!-- define some style elements-->
+<style>
+h1
+{
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 16px;
+    font-weight : bold;
+}
+label,a 
+{
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px; 
+}
+
+</style>	
+<!-- a helper script for vaidating the form-->
+<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+</head>	
+</head>
+
+<body>
+<h1>Contact us</h1>
+<form method="POST" name="contactform" action="contact-form-handler.php"> 
+<p>
+<label for='name'>Your Name:</label> <br>
+<input type="text" name="name">
+</p>
+<p>
+<label for='email'>Email Address:</label> <br>
+<input type="text" name="email"> <br>
+</p>
+<p>
+<label for='message'>Message:</label> <br>
+<textarea name="message"></textarea>
+</p>
+<input type="submit" value="Submit"><br>
 </form>
+
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+<!--
+Sample code from:
+http://www.html-form-guide.com/contact-form/php-email-contact-form.html
+-->
+
+
+</body>
+</html>
