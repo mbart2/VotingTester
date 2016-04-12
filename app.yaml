@@ -1,7 +1,7 @@
 application: arctic-pad-127914
-version: 2
+version: 3
 runtime: php55
-api_version: 2
+api_version: 3
 threadsafe: yes
 
 handlers:
