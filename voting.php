@@ -13,6 +13,7 @@ $headers = array(
     'Subject' => $subject
 );
 
+echo ('hih');
 $smtp = Mail::factory('smtp', array(
         'host' => 'ssl://smtp.gmail.com',
         'port' => '465',
