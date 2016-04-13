@@ -8,7 +8,7 @@
 <tr>
 	<td>London:</td>
 	<td><input type="number" name="num1" id="num1" min="0" max = "100" /></td>
-	<td><input type="number" name="num1s" id="num1s"/><td>
+	<td><input type="text" name="num1s" id="num1s" size="3"/><td>
 </tr>
 <tr><td>Paris:</td><td><input type="number" name="num2" id="num2" min="0" max = "100" /></td></tr>
 <tr><td>Prague:</td><td><input type="number" name="num3" id="num3" min="0" max = "100"/></td></tr>
