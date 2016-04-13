@@ -1,32 +1,20 @@
 <?php
-// Pear Mail Library
-require_once "Mail.php";
+    $recordAdded = false;
 
-$from = '<matthewbarteau@gmail.com>';
-$to = '<matthewbarteau@gmail.com>';
-$subject = 'Hi!';
-$body = "Hi,\n\nHow are you?";
+    if(isset($_GET['status'] && $_GET['status'] == 1)
+       $recordAdded = true;
 
-$headers = array(
-    'From' => $from,
-    'To' => $to,
-    'Subject' => $subject
-);
+    if($recordAdded)
+    {
+     echo '
+       <script type="text/javascript">
+         function hideMsg()
+         {
+            document.getElementById("popup").style.visibility = "hidden";
+         }
 
-echo ('hih');
-$smtp = Mail::factory('smtp', array(
-        'host' => 'ssl://smtp.gmail.com',
-        'port' => '465',
-        'auth' => true,
-        'username' => 'matthewbarteau@gmail.com',
-        'password' => 'idontknow5'
-    ));
-
-$mail = $smtp->send($to, $headers, $body);
-
-if (PEAR::isError($mail)) {
-    echo('<p>' . $mail->getMessage() . '</p>');
-} else {
-    echo('<p>Message successfully sent!</p>');
-}
+         document.getElementById("popup").style.visibility = "visible";
+         window.setTimeout("hideMsg()", 2000);
+       </script>';
+    }
 ?>
