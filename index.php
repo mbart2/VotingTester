@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<?php
 <html>
 <head>
 	<title>Contact us</title>
@@ -71,7 +71,6 @@ http://www.html-form-guide.com/contact-form/php-email-contact-form.html
 
 </body>
 </html>
-<?php
     $recordAdded = false;
 
     if(isset($_GET['status'] && $_GET['status'] == 1)
