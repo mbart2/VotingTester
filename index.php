@@ -1,132 +1,37 @@
-<form name="contactform" method="post" action="voting.php">
- 
-<table width="450px">
- 
-<tr>
- 
- <td valign="top">
- 
-  <label for="london">London</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="number" name="london" min="0" max="100">
- 
- </td>
- 
-</tr>
-<tr>
- 
- <td valign="top">
- 
-  <label for="paris">Paris</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="number" name="paris" min="0" max="100">
- 
- </td>
- 
-</tr>
-<tr>
- 
- <td valign="top">
- 
-  <label for="prague">Prague</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="number" name="prague" min="0" max="100">
- 
- </td>
- 
-</tr>
-<tr>
- 
- <td valign="top">
- 
-  <label for="zurich">Zurich</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="number" name="zurich" min="0" max="100">
- 
- </td>
- 
-</tr>
-<tr>
- 
- <td valign="top">
- 
-  <label for="venice">Venice</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="number" name="venice" min="0" max="100">
- 
- </td>
- 
-</tr>
-<tr>
- 
- <td valign="top">
- 
-  <label for="berlin">Berlin</label>
- 
- </td>
- 
- <td valign="top">
- 
-  <input  type="number" name="berlin" min="0" max="100">
- 
- </td>
- 
-</tr>
- 
-<tr>
-	<td>Remaining:</td>
-	<td><input type="text" name="rem" id="rem" readonly /></td>
-</tr>
- 
-<tr>
- 
- <td colspan="2" style="text-align:center">
- 
-  <input type="submit" value="Submit">
- 
- </td>
- 
-</tr>
- 
+<html>
+<head>
+<title>jQuery Sum & Subtract Two Input Fields</title>
+</head>
+<body>
+<form name="form1" method="post" action="" >
+<table>
+<tr><td>Num 1:</td><td><input type="text" name="num1" id="num1" /></td></tr>
+<tr><td>Num 2:</td><td><input type="text" name="num2" id="num2" /></td></tr>
+<tr><td>Sum:</td><td><input type="text" name="sum" id="sum" readonly /></td></tr>
+<tr><td>Subtract:</td><td><input type="text" name="subt" id="subt" readonly /></td></tr>
 </table>
- 
 </form>
+ 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
  //this calculates values automatically
  sum();
- $("#london, #paris").on("keydown keyup", function() {
+ $("#num1, #num2").on("keydown keyup", function() {
  sum();
  });
 });
  
 function sum() {
- var num1 = document.getElementById('london').value;
- var num2 = document.getElementById('paris').value;
- var result1 = num1 + num2;
+ var num1 = document.getElementById('num1').value;
+ var num2 = document.getElementById('num2').value;
+ var result = parseInt(num1) + parseInt(num2);
+ var result1 = parseInt(num2) - parseInt(num1);
  if (!isNaN(result)) {
- document.getElementById('rem').value = result1;
+ document.getElementById('sum').value = result;
+ document.getElementById('subt').value = result1;
  }
  }
 </script>
+</body>
+</html>
