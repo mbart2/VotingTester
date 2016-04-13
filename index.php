@@ -12,7 +12,7 @@
  
  <td valign="top">
  
-  <input  type="text" name="london" maxlength="3" size="3">
+  <input  type="number" name="london" maxlength="3" size="3">
  
  </td>
  
@@ -27,7 +27,7 @@
  
  <td valign="top">
  
-  <input  type="text" name="paris" maxlength="3" size="3">
+  <input  type="number" name="paris" maxlength="3" size="3">
  
  </td>
  
@@ -42,7 +42,7 @@
  
  <td valign="top">
  
-  <input  type="text" name="prague" maxlength="3" size="3">
+  <input  type="number" name="prague" maxlength="3" size="3">
  
  </td>
  
@@ -57,7 +57,7 @@
  
  <td valign="top">
  
-  <input  type="text" name="zurich" maxlength="3" size="3">
+  <input  type="number" name="zurich" maxlength="3" size="3">
  
  </td>
  
@@ -72,7 +72,7 @@
  
  <td valign="top">
  
-  <input  type="text" name="venice" maxlength="3" size="3">
+  <input  type="number" name="venice" maxlength="3" size="3">
  
  </td>
  
@@ -87,7 +87,7 @@
  
  <td valign="top">
  
-  <input  type="text" name="berlin" maxlength="3" size="3">
+  <input  type="number" name="berlin" maxlength="3" size="3">
  
  </td>
  
