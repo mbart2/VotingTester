@@ -11,13 +11,13 @@ print ($direct_text . $sum_total);
 // the message
 $msg = "First line of text\nSecond line of text";
 
-// use wordwrap() if lines are longer than 70 characters
-$msg = wordwrap($msg,70);
-$header = "from";
-
-// send email
-mail("matthewbarteau@gmail.com","My subject",$msg,$header);
-
-print ("sent");
+$email_from = "matthewbarteau@gmail.com";
+$to = "matthewbarteau@gmail.com";
+ 
+$headers = "From: $email_from \r\n";
+ 
+$headers .= "Reply-To: matthewbarteau@gmail.com \r\n";
+ 
+mail($to,$email_subject,$msg,$headers);
 
 ?>
