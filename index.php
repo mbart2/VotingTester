@@ -5,7 +5,11 @@
 <body>
 <form name="form1" method="post" action="" >
 <table>
-<tr><td>London:</td><td><input type="number" name="num1" id="num1" min="0" max = "100" /></td></tr>
+<tr>
+	<td>London:</td>
+	<td><input type="number" name="num1" id="num1" min="0" max = "100" /></td>
+	<td><input type="number" name="num1s" id="num1s"/><td>
+</tr>
 <tr><td>Paris:</td><td><input type="number" name="num2" id="num2" min="0" max = "100" /></td></tr>
 <tr><td>Prague:</td><td><input type="number" name="num3" id="num3" min="0" max = "100"/></td></tr>
 <tr><td>Berlin:</td><td><input type="number" name="num4" id="num4" min="0" max = "100"/></td></tr>
@@ -34,6 +38,8 @@ function sum() {
  var num6 = document.getElementById('num6').value;
  var result = parseInt(num1) + parseInt(num2)+ parseInt(num3) + parseInt(num4)+ parseInt(num5) + parseInt(num6);
  var result1 = 100 - result;
+ var num1s = Math.sqrt(num1);
+ document.getElementById('num1s').value = num1s;
  if (!isNaN(result)) {
  document.getElementById('subt').value = result1;
  }
