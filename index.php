@@ -4,6 +4,16 @@
 	<title>Contact us</title>
 <!-- define some style elements-->
 <style>
+//adduser.php
+#popup {
+    visibility: hidden; 
+    background-color: red; 
+    position: absolute;
+    top: 10px;
+    z-index: 100; 
+    height: 100px;
+    width: 300px
+}
 h1
 {
 	font-family : Arial, Helvetica, sans-serif;
@@ -23,6 +33,9 @@ label,a
 </head>
 
 <body>
+<div id="popup">
+    Record added successfully
+</div>
 <h1>Contact us</h1>
 <form method="POST" name="contactform" action="contact-form-handler.php"> 
 <p>
@@ -41,6 +54,7 @@ label,a
 </form>
 
 <script language="JavaScript">
+
 // Code for validating the form
 // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
 // for details
@@ -57,3 +71,23 @@ http://www.html-form-guide.com/contact-form/php-email-contact-form.html
 
 </body>
 </html>
+<?php
+    $recordAdded = false;
+
+    if(isset($_GET['status'] && $_GET['status'] == 1)
+       $recordAdded = true;
+
+    if($recordAdded)
+    {
+     echo '
+       <script type="text/javascript">
+         function hideMsg()
+         {
+            document.getElementById("popup").style.visibility = "hidden";
+         }
+
+         document.getElementById("popup").style.visibility = "visible";
+         window.setTimeout("hideMsg()", 2000);
+       </script>';
+    }
+?>
