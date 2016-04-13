@@ -6,9 +6,9 @@
 <form name="form1" method="post" action="" >
 <table style="border-spacing: 10px;">
 <tr>
-	<td>City</td>
-	<td>Coins Spent</td>
-	<td>Votes Casted</td>
+	<td><b>City</b></td>
+	<td><b>Coins Spent</b></td>
+	<td><b>Votes Casted</b></td>
 <tr>
 	<td>London:</td>
 	<td><input type="number" name="num1" id="num1" min="0" max = "100" /></td>
