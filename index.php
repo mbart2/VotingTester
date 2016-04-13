@@ -116,7 +116,7 @@
 $(document).ready(function() {
  //this calculates values automatically
  sum();
- $("#num1, #num2").on("keydown keyup", function() {
+ $("#london, #paris").on("keydown keyup", function() {
  sum();
  });
 });
