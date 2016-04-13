@@ -39,7 +39,7 @@ function sum() {
  var result = parseInt(num1) + parseInt(num2)+ parseInt(num3) + parseInt(num4)+ parseInt(num5) + parseInt(num6);
  var result1 = 100 - result;
  var num1s = Math.sqrt(num1);
- document.getElementById('num1s').value = num1s;
+ document.getElementById('num1s').value = Math.floor10(num1s);
  if (!isNaN(result)) {
  document.getElementById('subt').value = result1;
  }
