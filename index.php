@@ -23,7 +23,7 @@
 	<td>Prague:</td>
 	<td><input type="number" name="num3" id="num3" min="0" max = "100"/></td>
 	<td><input type="text" name="num33s" id="num3s" size="3"/><td>
-	<td>Remaining:</td>
+	<td>Coin Budget Left To Spend:</td>
 	<td><input type="number" name="subt" id="subt" readonly /></td>
 	</tr>
 <tr>
