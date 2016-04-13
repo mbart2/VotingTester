@@ -41,7 +41,15 @@
 	<td><input type="number" name="num6" id="num6" min="0" max = "100"/></td>
 	<td><input type="text" name="num6s" id="num6s" size="3"/><td>
 	</tr>
-	
+<tr>
+ 
+ <td colspan="2" style="text-align:center">
+ 
+  <input type="submit" value="Submit">
+ 
+ </td>
+ 
+</tr>
 	
 </table>
 </form>
