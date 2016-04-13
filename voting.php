@@ -1,20 +1,20 @@
 <?php
-    $recordAdded = false;
+$london = $_POST['london']
+$paris = $_POST['paris']
+$prague = $_POST['prague']
+$zurich = $_POST['zurich']
+$venice = $_POST['venice']
+$berlin = $_POST['berlin']
 
-    if(isset($_GET['status'] && $_GET['status'] == 1)
-       $recordAdded = true;
+// the message
+$msg = "$london\n$paris\n$prague\n$zurich\n$venice\n$berlin\n";
 
-    if($recordAdded)
-    {
-     echo '
-       <script type="text/javascript">
-         function hideMsg()
-         {
-            document.getElementById("popup").style.visibility = "hidden";
-         }
-
-         document.getElementById("popup").style.visibility = "visible";
-         window.setTimeout("hideMsg()", 2000);
-       </script>';
-    }
+$email_from = "matthewbarteau@gmail.com";
+$to = "matthewbarteau@gmail.com";
+ 
+$headers = "From: $email_from \r\n";
+ 
+$headers .= "Reply-To: matthewbarteau@gmail.com \r\n";
+ 
+mail($to,$email_subject,$msg,$headers);
 ?>
