@@ -4,7 +4,7 @@
 </head>
 <body>
 <form name="form1" method="post" action="" >
-<table style="border-spacing: 15px;>
+<table>
 <tr>
 	<td>City</td>
 	<td>Coins Spent</td>
