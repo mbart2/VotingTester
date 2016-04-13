@@ -2,7 +2,7 @@
 <head>
 <title>jQuery Sum & Subtract Two Input Fields</title>
 </head>
-<body>
+<body background="background.jpg">
 <form name="form1" method="post" action="" >
 <table style="border-spacing: 10px;">
 <tr>
