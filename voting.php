@@ -9,12 +9,8 @@ $berlin = $_POST['berlin']
 // the message
 $msg = "$london\n$paris\n$prague\n$zurich\n$venice\n$berlin\n";
 
-$email_from = "matthewbarteau@gmail.com";
-$to = "matthewbarteau@gmail.com";
- 
-$headers = "From: $email_from \r\n";
- 
-$headers .= "Reply-To: matthewbarteau@gmail.com \r\n";
- 
-mail($to,$email_from,$msg,$headers);
+// send email
+mail("matthewbarteau@gmail.com","My subject",$msg);
+
+print ("sent");
 ?>
