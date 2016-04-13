@@ -6,7 +6,7 @@
 <form name="form1" method="post" action="" >
 <table>
 <tr>
-	<td>Location</td>
+	<td>City</td>
 	<td>Coins Spent</td>
 	<td>Votes Casted</td>
 <tr>
@@ -23,6 +23,8 @@
 	<td>Prague:</td>
 	<td><input type="number" name="num3" id="num3" min="0" max = "100"/></td>
 	<td><input type="text" name="num33s" id="num3s" size="3"/><td>
+	<td>Remaining:</td>
+	<td><input type="number" name="subt" id="subt" readonly /></td>
 	</tr>
 <tr>
 	<td>Berlin:</td>
@@ -39,7 +41,8 @@
 	<td><input type="number" name="num6" id="num6" min="0" max = "100"/></td>
 	<td><input type="text" name="num6s" id="num6s" size="3"/><td>
 	</tr>
-<tr><td>Remaining:</td><td><input type="number" name="subt" id="subt" readonly /></td></tr>
+	
+	
 </table>
 </form>
  
