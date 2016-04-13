@@ -94,6 +94,11 @@
 </tr>
  
 <tr>
+	<td>Remaining:</td>
+	<td><input type="text" name="rem" id="rem" readonly /></td>
+</tr>
+ 
+<tr>
  
  <td colspan="2" style="text-align:center">
  
@@ -106,3 +111,22 @@
 </table>
  
 </form>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+ //this calculates values automatically
+ sum();
+ $("#num1, #num2").on("keydown keyup", function() {
+ sum();
+ });
+});
+ 
+function sum() {
+ var num1 = document.getElementById('london').value;
+ var num2 = document.getElementById('paris').value;
+ var result1 = num1 + num2;
+ if (!isNaN(result)) {
+ document.getElementById('rem').value = result1;
+ }
+ }
+</script>
