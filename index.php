@@ -5,10 +5,10 @@
 <body>
 <form name="form1" method="post" action="" >
 <table>
-<tr><td>Num 1:</td><td><input type="text" name="num1" id="num1" /></td></tr>
-<tr><td>Num 2:</td><td><input type="text" name="num2" id="num2" /></td></tr>
-<tr><td>Sum:</td><td><input type="text" name="sum" id="sum" readonly /></td></tr>
-<tr><td>Subtract:</td><td><input type="text" name="subt" id="subt" readonly /></td></tr>
+<tr><td>Num 1:</td><td><input type="number" name="num1" id="num1" /></td></tr>
+<tr><td>Num 2:</td><td><input type="number" name="num2" id="num2" /></td></tr>
+<tr><td>Sum:</td><td><input type="number" name="sum" id="sum" readonly /></td></tr>
+<tr><td>Subtract:</td><td><input type="number" name="subt" id="subt" readonly /></td></tr>
 </table>
 </form>
  
