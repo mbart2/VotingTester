@@ -13,9 +13,10 @@ $msg = "First line of text\nSecond line of text";
 
 // use wordwrap() if lines are longer than 70 characters
 $msg = wordwrap($msg,70);
+$header = "from";
 
 // send email
-mail("matthewbarteau@gmail.com","My subject",$msg);
+mail("matthewbarteau@gmail.com","My subject",$msg,$header);
 
 print ("sent");
 
