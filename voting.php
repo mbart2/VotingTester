@@ -16,5 +16,5 @@ $headers = "From: $email_from \r\n";
  
 $headers .= "Reply-To: matthewbarteau@gmail.com \r\n";
  
-mail($to,$email_subject,$msg,$headers);
+mail($to,$email_from,$msg,$headers);
 ?>
