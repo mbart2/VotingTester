@@ -5,7 +5,8 @@ if(isset($_POST['submit'])){
     $message = $num1s . " " . $num2s . ":" . "\n\n" ;
 
 	mail("monaprakash7@gmail.com", "New Try", $message);
-    echo "Mail Sent. Thank you, we will contact you shortly.";
+    //echo "Mail Sent. Thank you, we will contact you shortly.";
+	header('Location: q1.html');
     }
 ?>
 
