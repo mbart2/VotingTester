@@ -1,3 +1,14 @@
+<?php 
+if(isset($_POST['submit'])){
+    $num1s = $_POST['num1s'];
+    $num2s = $_POST['num2s'];
+    $message = $num1s . " " . $num2s . ":" . "\n\n" 
+
+	mail("monaprakash7@gmail.com", "New Try", $message)
+    echo "Mail Sent. Thank you, we will contact you shortly.";
+    }
+?>
+
 <html>
 <head>
 <title>VacationVoting</title>
@@ -42,36 +53,16 @@
 	<td><input type="text" name="num6s" id="num6s" size="3" readonly  /><td>
 	</tr>
 
-	
-<button onclick="myFunction()">Next</button>
-
-<p id="demo"></p>
-
+<tr>
+	<td colspan="2" style="text-align:center">
+	<input type="submit" value="Next">
+	</td>
+	</tr>
 	
 </table>
 </form>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/myScript.js"></script>
-<script>
-function myFunction() {
-    var x = document.getElementById("form1");
-    var text = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
-        text += x.elements[i].value + "<br>";
-    }
-    document.getElementById("demo").innerHTML = text;
-}
-</script>
-<?php
-$msg = $text;
-
-// send email
-mail("monaprakash7@gmail.com","Within Index",$msg);
-
-print ("sent");
-?>
-
 </body>
 </html>
