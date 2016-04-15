@@ -2,9 +2,13 @@
 if(isset($_POST['submit'])){
     $num1s = $_POST['num1s'];
     $num2s = $_POST['num2s'];
-    $message = $num1s . " " . $num2s . ":" . "\n\n" ;
+	$num3s = $_POST['num3s'];
+    $num4s = $_POST['num4s'];
+	$num5s = $_POST['num5s'];
+    $num6s = $_POST['num6s'];
+    $message = $num1s . " " . $num2s . " " . $num3s .  " " . $num4s . " " . $num5s . " " . $num6s . "\n\n" ;
 
-	mail("monaprakash7@gmail.com", "New Try", $message);
+	mail("monaprakash7@gmail.com", "Quadratic Votes", $message);
     //echo "Mail Sent. Thank you, we will contact you shortly.";
 	header('Location: q1.html');
     }
