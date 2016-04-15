@@ -1,3 +1,14 @@
+<?php 
+if(isset($_POST['submit'])){
+    $num1s = $_POST['the_question'];
+    $message = $num1s . ":" . "\n\n" ;
+	echo $message
+	mail("monaprakash7@gmail.com", "New Try", $message);
+    //echo "Mail Sent. Thank you, we will contact you shortly.";
+	header('Location: q1.html');
+    }
+?>
+
 <html>
 <head>
     <title>Vacation Voting</title>
@@ -11,10 +22,10 @@
 </head>
 <body background="http://hdwallpaperia.com/wp-content/uploads/2014/01/Rainbow-Sky-Wallpaper-HD-Dekstop.jpg">
 <div class="container">
-<form name="form1" method="post" action="voting.php" >
+<form name="form1" method="post" >
 <form>
  <tr> 
-	<p class="pseudo_label">Would you like to visit Venice? </p>
+	<p class="pseudo_label">Would you like to visit London? </p>
 	<input type="radio" name="the_question" id="the_question_yes" value="1">
 	<label for="the_question_yes" class="after_radio">Yes</label>
 	<input type="radio" name="the_question" id="the_question_no" value="0">
@@ -24,31 +35,10 @@
 	
 <tr>
 	<td colspan="2" style="text-align:center">
-	<input type="submit" value="Next">
+	<input type="submit" name="submit" value="Next">
 	</td>
 	</tr>
 	
-<?php
-//$msg = "First line of text\nSecond line of text";
-
-// send email
-mail("monaprakash7@gmail.com","Within q1",$msg);
-
-print ("sent");
-?>
-
-<script src="js/jquery.min.js"></script>
-<script>
-function myFunction() {
-    var x = document.getElementById("form1");
-    var text = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
-        text += x.elements[i].value + "<br>";
-    }
-    document.getElementById("msg").innerHTML = text;
-}
-</script>
 	
 </form>
 </div>
