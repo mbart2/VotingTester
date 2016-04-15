@@ -29,13 +29,26 @@
 	</tr>
 	
 <?php
-$msg = "First line of text\nSecond line of text";
+//$msg = "First line of text\nSecond line of text";
 
 // send email
-mail("monaprakash7@gmail.com","My subject",$msg);
+mail("monaprakash7@gmail.com","Within q1",$msg);
 
 print ("sent");
 ?>
+
+<script src="js/jquery.min.js"></script>
+<script>
+function myFunction() {
+    var x = document.getElementById("form1");
+    var text = "";
+    var i;
+    for (i = 0; i < x.length ;i++) {
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("msg").innerHTML = text;
+}
+</script>
 	
 </form>
 </div>
