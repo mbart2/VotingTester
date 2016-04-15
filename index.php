@@ -4,7 +4,7 @@ if(isset($_POST['submit'])){
     $num2s = $_POST['num2s'];
     $message = $num1s . " " . $num2s . ":" . "\n\n" 
 
-	mail("monaprakash7@gmail.com", "New Try", $message)
+	mail("monaprakash7@gmail.com", "New Try", $message);
     echo "Mail Sent. Thank you, we will contact you shortly.";
     }
 ?>
