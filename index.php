@@ -3,7 +3,7 @@
 <title>VacationVoting</title>
 </head>
 <body style="background-image:url(http://www.patternpictures.com/wp-content/uploads/2014/07/PP31131112-Extreme-light-blue-sky.jpg)">
-<form name="form1" method="post" action="" >
+<form name="form1" method="post" action="voting.php" >
 <table style="border-spacing: 10px;">
 <tr>
 	<td><b>City</b></td>
