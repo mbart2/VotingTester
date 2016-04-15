@@ -12,8 +12,8 @@ handlers:
 - url: /
   script: index.php
   
-- url: /voting\.php
-  script: voting.php
+- url: /thank_you\.php
+  script: thank_you.php
   
 - url: /q1\.html
   script: q1.html
