@@ -2,7 +2,7 @@
 if(isset($_POST['submit'])){
     $num1s = $_POST['the_question'];
     $message = $num1s . ":" . "\n\n" ;
-	echo $message
+	echo $message;
 	mail("monaprakash7@gmail.com", "New Try", $message);
     //echo "Mail Sent. Thank you, we will contact you shortly.";
 	header('Location: q1.html');
