@@ -43,6 +43,7 @@
 	</tr>
 
 <tr> 
+	<td> HIIII: <\td>
 	<p class="pseudo_label">Some long winded yes or no question?</p>
 	<input type="radio" name="the_question" id="the_question_yes" value="1">
 	<label for="the_question_yes" class="after_radio">Yes</label>
