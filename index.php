@@ -51,11 +51,13 @@
  
 </tr>
 
-<p class="pseudo_label">Some long winded yes or no question?</p>
-<input type="radio" name="the_question" id="the_question_yes" value="1">
-<label for="the_question_yes" class="after_radio">Yes</label>
-<input type="radio" name="the_question" id="the_question_no" value="0">
-<label for="the_question_no" class="after_radio">No</label>
+<tr> 
+	<p class="pseudo_label">Some long winded yes or no question?</p>
+	<input type="radio" name="the_question" id="the_question_yes" value="1">
+	<label for="the_question_yes" class="after_radio">Yes</label>
+	<input type="radio" name="the_question" id="the_question_no" value="0">
+	<label for="the_question_no" class="after_radio">No</label>
+</tr>
 	
 </table>
 </form>
