@@ -5,7 +5,6 @@ if(isset($_POST['submit'])){
 	echo $message;
 	mail("monaprakash7@gmail.com", "New Try", $message);
     //echo "Mail Sent. Thank you, we will contact you shortly.";
-	header('Location: voting.php');
     }
 ?>
 
@@ -22,7 +21,7 @@ if(isset($_POST['submit'])){
 </head>
 <body background="http://hdwallpaperia.com/wp-content/uploads/2014/01/Rainbow-Sky-Wallpaper-HD-Dekstop.jpg">
 <div class="container">
-<form name="form1" method="post" >
+<form name="form1" method="post" action="voting.php">
 <form>
  <tr> 
 	<p class="pseudo_label">Would you like to visit London? </p>
