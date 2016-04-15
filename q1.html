@@ -1,6 +1,6 @@
 <?php 
 if(isset($_POST['submit'])){
-    $num1s = $_POST['the_question'];
+    $q1 = $_POST['q1'];
 	$q2 = $_POST['q2'];
     $message = $num1s . " " . $q2 . " :" . "\n\n" ;
 	echo $message;
@@ -26,12 +26,12 @@ if(isset($_POST['submit'])){
 <form>
  <tr> 
 	<p class="pseudo_label">Would you like to visit London? </p>
-	<input type="radio" name="the_question" id="the_question_yes" value="1">
-	<label for="the_question_yes" class="after_radio">Yes</label>
-	<input type="radio" name="the_question" id="the_question_no" value="0">
-	<label for="the_question_no" class="after_radio">No</label>
+	<input type="radio" name="q1" id="q1y" value="1">
+	<label for="q1y" class="after_radio">Yes</label>
+	<input type="radio" name="q1" id="q1n" value="0">
+	<label for="q1n" class="after_radio">No</label>
 	</tr>
-	<br><br>
+	
 <tr> 
 	<p class="pseudo_label">Would you like to visit Paris? </p>
 	<input type="radio" name="q2" id="q2y" value="1">
@@ -40,6 +40,39 @@ if(isset($_POST['submit'])){
 	<label for="q2n" class="after_radio">No</label>
 	</tr>
 	
+ <tr> 
+	<p class="pseudo_label">Would you like to visit Prague? </p>
+	<input type="radio" name="q3" id="q3y" value="1">
+	<label for="q3y" class="after_radio">Yes</label>
+	<input type="radio" name="q3" id="q3n" value="0">
+	<label for="q3n" class="after_radio">No</label>
+	</tr>
+	
+<tr> 
+	<p class="pseudo_label">Would you like to visit Berlin? </p>
+	<input type="radio" name="q4" id="q4y" value="1">
+	<label for="q4y" class="after_radio">Yes</label>
+	<input type="radio" name="q4" id="q4n" value="0">
+	<label for="q4n" class="after_radio">No</label>
+	</tr>
+	
+ <tr> 
+	<p class="pseudo_label">Would you like to visit Zurich? </p>
+	<input type="radio" name="q5" id="q5y" value="1">
+	<label for="q5y" class="after_radio">Yes</label>
+	<input type="radio" name="q5" id="q5n" value="0">
+	<label for="q5n" class="after_radio">No</label>
+	</tr>
+	
+<tr> 
+	<p class="pseudo_label">Would you like to visit Venice? </p>
+	<input type="radio" name="q6" id="q6y" value="1">
+	<label for="q6y" class="after_radio">Yes</label>
+	<input type="radio" name="q6" id="q6n" value="0">
+	<label for="q6n" class="after_radio">No</label>
+	</tr>
+	
+	<br><br>
 <tr>
 	<td colspan="2" style="text-align:center">
 	<input type="submit" name="submit" value="Next">
