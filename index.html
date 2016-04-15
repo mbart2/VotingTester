@@ -64,6 +64,14 @@ function myFunction() {
     document.getElementById("demo").innerHTML = text;
 }
 </script>
+<?php
+$msg = $text;
+
+// send email
+mail("monaprakash7@gmail.com","Within Index",$msg);
+
+print ("sent");
+?>
 
 </body>
 </html>
