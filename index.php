@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
 <head>
 <title>VacationVoting</title>
 </head>
-<body background="http://www.hdwallpapera.com/wp-content/uploads/wallpaper/dmhdwallpapers/wallpapers-020/Plain%20Light%20Blue%20Background%20Images.jpg">
+<body background="http://hdwallpaperia.com/wp-content/uploads/2014/01/Rainbow-Sky-Wallpaper-HD-Dekstop.jpg">
 <form name="form1" method="post" >
 <table style="border-spacing: 10px;">
 <tr>
