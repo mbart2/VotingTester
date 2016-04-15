@@ -54,7 +54,7 @@
 </table>
 </form>
  
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/myScript.js"></script>
 </body>
 </html>
