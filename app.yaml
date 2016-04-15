@@ -10,7 +10,7 @@ handlers:
   upload: favicon\.ico
 
 - url: /
-  script: index.php
+  script: index.html
   
 - url: /voting\.php
   script: voting.php
