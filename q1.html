@@ -1,18 +1,26 @@
 <html>
 <head>
-<title>VacationVoting</title>
+    <title>Vacation Voting</title>
+    <style type="text/css">
+    .container {
+        width: 500px;
+        clear: both;
+    }
+
+    </style>
 </head>
-<body background="http://www.hdwallpapera.com/wp-content/uploads/wallpaper/dmhdwallpapers/wallpapers-020/Plain%20Light%20Blue%20Background%20Images.jpg">
+<body background="http://hdwallpaperia.com/wp-content/uploads/2014/01/Rainbow-Sky-Wallpaper-HD-Dekstop.jpg">
+<div class="container">
 <form name="form1" method="post" action="voting.php" >
-<form> 
-<tr> 
+<form>
+ <tr> 
 	<p class="pseudo_label">Would you like to visit Venice? </p>
 	<input type="radio" name="the_question" id="the_question_yes" value="1">
 	<label for="the_question_yes" class="after_radio">Yes</label>
 	<input type="radio" name="the_question" id="the_question_no" value="0">
 	<label for="the_question_no" class="after_radio">No</label>
 	</tr>
-	<br>
+	<br><br>
 	
 <tr>
 	<td colspan="2" style="text-align:center">
@@ -20,6 +28,6 @@
 	</td>
 	</tr>
 </form>
-
+</div>
 </body>
 </html>
