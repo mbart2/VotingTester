@@ -41,6 +41,15 @@
 	<td><input type="number" name="num6" id="num6" min="0" max = "100"/></td>
 	<td><input type="text" name="num6s" id="num6s" size="3" readonly  /><td>
 	</tr>
+
+<tr> 
+	<p class="pseudo_label">Some long winded yes or no question?</p>
+	<input type="radio" name="the_question" id="the_question_yes" value="1">
+	<label for="the_question_yes" class="after_radio">Yes</label>
+	<input type="radio" name="the_question" id="the_question_no" value="0">
+	<label for="the_question_no" class="after_radio">No</label>
+	</tr>
+	
 <tr>
  
  <td colspan="2" style="text-align:center">
@@ -49,14 +58,6 @@
  
  </td>
  
-</tr>
-
-<tr> 
-	<p class="pseudo_label">Some long winded yes or no question?</p>
-	<input type="radio" name="the_question" id="the_question_yes" value="1">
-	<label for="the_question_yes" class="after_radio">Yes</label>
-	<input type="radio" name="the_question" id="the_question_no" value="0">
-	<label for="the_question_no" class="after_radio">No</label>
 </tr>
 	
 </table>
