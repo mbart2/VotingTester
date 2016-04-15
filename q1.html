@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
 	$q5 = $_POST['q5'];
 	$q6 = $_POST['q6'];
     $message = $q1 . " " . $q2 . " " . $q3 . " " . $q4 . " " . $q5 . " " . $q6 . "\n\n" ;
-	echo $message;
+	
 	mail("monaprakash7@gmail.com", "Approval", $message);
     //echo "Mail Sent. Thank you, we will contact you shortly.";
     }
@@ -79,7 +79,7 @@ if(isset($_POST['submit'])){
 	<br><br>
 <tr>
 	<td colspan="2" style="text-align:center">
-	<input type="submit" name="submit" value="Next">
+	<input type="submit" name="submit" value="Submit">
 	</td>
 	</tr>
 	
