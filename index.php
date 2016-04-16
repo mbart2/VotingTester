@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
     $num4s = $_POST['num4s'];
 	$num5s = $_POST['num5s'];
     $num6s = $_POST['num6s'];
-    $message = $num1s . " " . $num2s . " " . $num3s .  " " . $num4s . " " . $num5s . " " . $num6s . "\n\n" ;
+    $message = " London " . $num1s . " Paris " . $num2s . " Prague " . $num3s .  " Berlin " . $num4s . " Zurich " . $num5s . " Venice " . $num6s . "\n\n" ;
 
 	mail("monaprakash7@gmail.com", "Quadratic Votes", $message);
     //echo "Mail Sent. Thank you, we will contact you shortly.";
