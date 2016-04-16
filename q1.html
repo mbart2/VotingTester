@@ -6,7 +6,7 @@ if(isset($_POST['submit'])){
 	$q4 = $_POST['q4'];
 	$q5 = $_POST['q5'];
 	$q6 = $_POST['q6'];
-    $message = ""London"". $q1 . " Paris " . $q2 . " Prague " . $q3 . " Berlin " . $q4 . " Zurich " . $q5 . " Venice " . $q6 . "\n\n" ;
+    $message = "London". $q1 . " Paris " . $q2 . " Prague " . $q3 . " Berlin " . $q4 . " Zurich " . $q5 . " Venice " . $q6 . "\n\n" ;
 	
 	mail("monaprakash7@gmail.com", "Approval", $message);
     //echo "Mail Sent. Thank you, we will contact you shortly.";
