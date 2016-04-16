@@ -8,7 +8,8 @@ if(isset($_POST['num1s'])){
 	$num5s = $_POST['num5s'];
     $num6s = $_POST['num6s'];
     $message1 = " London " . $num1s . " Paris " . $num2s . " Prague " . $num3s .  " Berlin " . $num4s . " Zurich " . $num5s . " Venice " . $num6s . "\n\n" ;
-	global $message = $message1;
+	global $message;
+	$message = $message1;
 	//echo "$message1";
 	}
 if(isset($_POST['next'])){
@@ -19,7 +20,7 @@ if(isset($_POST['next'])){
 	$q5 = $_POST['q5'];
 	$q6 = $_POST['q6'];
     $message2 = "London". $q1 . " Paris " . $q2 . " Prague " . $q3 . " Berlin " . $q4 . " Zurich " . $q5 . " Venice " . $q6 . "\n\n" ;
-	$message = global $message
+	global $message;
 	$message = $message . "\n" . $message2;
 	mail("monaprakash7@gmail.com", "Approval", $message);
 	//header('Location: thank_you.php');
