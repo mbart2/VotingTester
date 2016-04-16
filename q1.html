@@ -1,22 +1,24 @@
 <?php 
-if(isset($_POST['next'])){
-	$num1s = $_POST['num1s'];
+if(isset($_POST['num1s'])){
+    $num1s = $_POST['num1s'];
     $num2s = $_POST['num2s'];
 	$num3s = $_POST['num3s'];
     $num4s = $_POST['num4s'];
 	$num5s = $_POST['num5s'];
     $num6s = $_POST['num6s'];
     $message1 = " London " . $num1s . " Paris " . $num2s . " Prague " . $num3s .  " Berlin " . $num4s . " Zurich " . $num5s . " Venice " . $num6s . "\n\n" ;
-
+	echo = $message1;
+	}
+if(isset($_POST['next'])){
     $q1 = $_POST['q1'];
 	$q2 = $_POST['q2'];
 	$q3 = $_POST['q3'];
 	$q4 = $_POST['q4'];
 	$q5 = $_POST['q5'];
 	$q6 = $_POST['q6'];
-    $message2 = "London ". $q1 . " Paris " . $q2 . " Prague " . $q3 . " Berlin " . $q4 . " Zurich " . $q5 . " Venice " . $q6 . "\n\n" ;
+    $message2 = "London". $q1 . " Paris " . $q2 . " Prague " . $q3 . " Berlin " . $q4 . " Zurich " . $q5 . " Venice " . $q6 . "\n\n" ;
 	
-	$message = $message1 . "\n" . $message2;
+	$message = $message . "\n" . $message2;
 	mail("monaprakash7@gmail.com", "Approval", $message);
 	//header('Location: thank_you.php');
     echo "$message";
