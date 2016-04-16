@@ -1,20 +1,3 @@
-<?php 
-session_start();
-if(isset($_POST['submit'])){
-    $num1s = $_POST['num1s'];
-    $num2s = $_POST['num2s'];
-	$num3s = $_POST['num3s'];
-    $num4s = $_POST['num4s'];
-	$num5s = $_POST['num5s'];
-    $num6s = $_POST['num6s'];
-    $message = " London " . $num1s . " Paris " . $num2s . " Prague " . $num3s .  " Berlin " . $num4s . " Zurich " . $num5s . " Venice " . $num6s . "\n\n" ;
-	$_SESSION['message']=$message;
-	//mail("monaprakash7@gmail.com", "Quadratic Votes", $message);
-    //echo "Mail Sent. Thank you, we will contact you shortly.";
-	header('Location: q1.html');
-    }
-?>
-
 <!DOCTYPE html>
 <head>
 <title>VacationVoting</title>

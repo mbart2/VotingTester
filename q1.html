@@ -1,7 +1,16 @@
 <?php 
-session_start();
-$message = $_SESSION['message'];
-echo $message;
+$message = "";
+if(isset($_POST['num1s'])){
+    $num1s = $_POST['num1s'];
+    $num2s = $_POST['num2s'];
+	$num3s = $_POST['num3s'];
+    $num4s = $_POST['num4s'];
+	$num5s = $_POST['num5s'];
+    $num6s = $_POST['num6s'];
+    $message1 = " London " . $num1s . " Paris " . $num2s . " Prague " . $num3s .  " Berlin " . $num4s . " Zurich " . $num5s . " Venice " . $num6s . "\n\n" ;
+	$message = $message1;
+	echo "hi";
+	}
 if(isset($_POST['next'])){
     $q1 = $_POST['q1'];
 	$q2 = $_POST['q2'];
@@ -14,7 +23,7 @@ if(isset($_POST['next'])){
 	$message = $message . "\n" . $message2;
 	mail("monaprakash7@gmail.com", "Approval", $message);
 	//header('Location: thank_you.php');
-    echo $message;
+    echo "$message";
     }
 ?>
 
@@ -84,7 +93,7 @@ if(isset($_POST['next'])){
 	<br><br>
 <tr>
 	<td colspan="2" style="text-align:center">
-	<input type="submit" name="next" value="Submit">
+	<input type="submit" name="submit" value="Submit">
 	</td>
 	</tr>
 	
